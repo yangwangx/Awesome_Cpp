@@ -63,9 +63,9 @@
 >> For people having trouble remembering the order in which const keyword is to be used, here's a quick tip. 
 You have to read it backward, like the compiler does. For instance : 
 >>
->> `const int * A;` // A is a pointer to an int that is constant  
+>> `const int* A;` // A is a pointer to an int that is constant  
 >> `int const* A;` // A is a pointer to a const int   
->> `int * const A;` // A is a const pointer to an int  
+>> `int* const A;` // A is a const pointer to an int  
 >> `const int* const A;` // A is a const pointer to an int that is constant  
 >> `T a[n];` // a is an array of n T  
 >> `T* a;`   // a is a pointer to a T  
