@@ -60,11 +60,16 @@
 
 * `virtual` member function is to support polymorphism;  
   - A `class` stores virtual functions in a virtual function table (`vtbl`), if any   
-  - Derived classes can inherit, override, and introduce virtual functions    
-  - Derived classes must implement the pure virtual functions   
+  - The derived class cannot override non-virtual functions   
+  - The derived class can inherit, override, or introduce virtual functions    
+  - The derived class must implement the pure virtual functions   
+  - Explicitly annotate overrides with `override` or `final`;   
+  - Don't  use `virtual` when declaring an `override` (to catch bug)  
 * `virtual inheritance` is to avoid the duplicated base class subobject that occurs with the “dreaded diamond”. 
+  - Multiple implementation inheritance is strongly discouraged   
   - Where in a hierarchy should I use virtual inheritance? 
   - Just below the top of the diamond, not at the join-class.  
+
 
 ## Some Tips
 
