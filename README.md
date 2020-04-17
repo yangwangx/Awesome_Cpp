@@ -36,6 +36,9 @@
 ## Google C++ Style Guide
 [<img width="800" src="images/google_cpp_style_guide.png">](https://google.github.io/styleguide/cppguide.html)
 
+## World map of STL algorithms
+[<img width="800" src="images/world_map_of_cpp_STL_algorithms.png">](https://www.fluentcpp.com/getthemap/)
+
 ## Self-contained Headers
 * In general, every `.cc` file should have an associated `.h` file
 * The `.h` files contain the declarations, while the `.cc` files contain the definitions 
@@ -53,10 +56,17 @@
 
 * `#include` the headers you need; avoid using `forward declarations`  
 
-## World map of STL algorithms
-[<img width="800" src="images/world_map_of_cpp_STL_algorithms.png">](https://www.fluentcpp.com/getthemap/)
+## Keyword `virtual`
 
-## Smart tips
+* `virtual` member function is to support polymorphism;  
+  - A `class` stores virtual functions in a virtual function table (`vtbl`), if any   
+  - Derived classes can inherit, override, and introduce virtual functions    
+  - Derived classes must implement the pure virtual functions   
+* `virtual inheritance` is to avoid the duplicated base class subobject that occurs with the “dreaded diamond”. 
+  - Where in a hierarchy should I use virtual inheritance? 
+  - Just below the top of the diamond, not at the join-class.  
+
+## Some Tips
 
 * Read Types Backwards
 
@@ -76,3 +86,6 @@ You have to read it backward, like the compiler does. For instance :
 * OO (Polymorphic) vs OB (Nonpolymorphic): Use Pointers/References for Polymorphism        
 
 >> <img width="600" src="images/OO_vs_OB.jpeg">
+
+* `non-static` member function uses `this` pointer; `static` member function is `this`-less  
+
