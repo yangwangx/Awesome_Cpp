@@ -75,4 +75,4 @@ You have to read it backward, like the compiler does. For instance :
  
 * OO (Polymorphic) vs OB (Nonpolymorphic): Use Pointers/References for Polymorphism        
 
->> <img width="600" src="images/oo_vs_ob.jpeg">
+>> <img width="600" src="images/OO_vs_OB.jpeg">
