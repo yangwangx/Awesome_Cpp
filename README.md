@@ -44,7 +44,7 @@
 * All header files should be self-contained (compile on their own)  
 * All header files should have `#define guards` to prevent multiple inclusion  
 
-* > ```cpp
+```cpp
 #ifndef FOO_BAR_BAZ_H_  // <PROJECT>_<PATH>_<FILE>_H_
 #define FOO_BAR_BAZ_H_
 ...
