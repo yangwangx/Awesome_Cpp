@@ -23,7 +23,7 @@
 
 
 ## C++ is a compiled language
-[<img width="300" src="images/cpp_is_a_compiled_language.jpeg">](https://www.youtube.com/watch?v=SfGuIVzE_Os&t=341s)
+[<img width="300" target="_blank" src="images/cpp_is_a_compiled_language.jpeg">](https://www.youtube.com/watch?v=SfGuIVzE_Os&t=341s)
 
 
 
@@ -34,10 +34,10 @@
 * `auto` use `type inference`
 
 ## Google C++ Style Guide
-[<img width="800" src="images/google_cpp_style_guide.png">](https://google.github.io/styleguide/cppguide.html)
+[<img target="_blank" src="images/google_cpp_style_guide.png">](https://google.github.io/styleguide/cppguide.html)
 
 ## World map of STL algorithms
-[<img width="800" src="images/world_map_of_cpp_STL_algorithms.png">](https://www.fluentcpp.com/getthemap/)
+[<img target="_blank" src="images/world_map_of_cpp_STL_algorithms.png">](https://www.fluentcpp.com/getthemap/)
 
 ## Self-contained Headers
 * In general, every `.cc` file should have an associated `.h` file
