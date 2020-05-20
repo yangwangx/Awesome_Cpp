@@ -23,7 +23,7 @@
 
 ### Design Patterns
 * [Design Patterns for Humans `quick lookup`](https://github.com/kamranahmedse/design-patterns-for-humans)   
-* [(Refactoring Guru) Design Patterns `good reference`](https://refactoring.guru/design-patterns/catalog)[`中文版`](https://refactoringguru.cn/design-patterns/catalog)  
+* [(Refactoring Guru) Design Patterns `good reference`](https://refactoring.guru/design-patterns/catalog) [`中文版`](https://refactoringguru.cn/design-patterns/catalog)  
 * [(Source Making) Design Patterns `good tips`](https://sourcemaking.com/design_patterns)    
 
 
