@@ -4,23 +4,27 @@
 ### Books
 
 * [The Definitive C++ Book Guide and List](https://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list)   
-* [A Tour of C++ (2nd)](https://www.amazon.com/Tour-C-Depth-ebook/dp/B07FW7P3D3/ref=sr_1_1?crid=258SFPMIRD2L9&dchild=1&keywords=tour+of+c%2B%2B+second+edition&qid=1587085685&s=books&sprefix=A+Tour+of+C%2B%2B+second%2Cstripbooks%2C149&sr=1-1)  
-* [Inside the C++ Object Model](https://www.amazon.com/Inside-Object-Model-Stanley-Lippman/dp/0201834545/ref=sr_1_1?dchild=1&keywords=Inside+the+C%2B%2B+Object+Model&qid=1587085658&s=books&sr=1-1)   [`中文笔记`](https://www.iteye.com/blog/dsqiu-1669614)   
-* [Effective C++ (3rd)](https://www.amazon.com/Effective-Specific-Improve-Programs-Designs/dp/0321334876)  
-* [Effective Modern C++](https://www.amazon.com/Effective-Modern-Specific-Ways-Improve/dp/1491903996)  
+* [A Tour of C++ (2nd) `overview`](https://www.amazon.com/Tour-C-Depth-ebook/dp/B07FW7P3D3/ref=sr_1_1?crid=258SFPMIRD2L9&dchild=1&keywords=tour+of+c%2B%2B+second+edition&qid=1587085685&s=books&sprefix=A+Tour+of+C%2B%2B+second%2Cstripbooks%2C149&sr=1-1)  
+* [Inside the C++ Object Model `under the hood`](https://www.amazon.com/Inside-Object-Model-Stanley-Lippman/dp/0201834545/ref=sr_1_1?dchild=1&keywords=Inside+the+C%2B%2B+Object+Model&qid=1587085658&s=books&sr=1-1)   [`中文笔记`](https://www.iteye.com/blog/dsqiu-1669614)   
+* [Effective C++ (3rd) `best practices (old)`](https://www.amazon.com/Effective-Specific-Improve-Programs-Designs/dp/0321334876)    
+* [Effective Modern C++ `best practices`](https://www.amazon.com/Effective-Modern-Specific-Ways-Improve/dp/1491903996)  
 * [Effective STL](https://www.amazon.com/Effective-STL-Addison-Wesley-Professional-Computing-ebook/dp/B004V4432W/ref=sr_1_1?dchild=1&keywords=Effective+STL&qid=1587086496&s=books&sr=1-1)  
 
 ### Google
-* [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html) [`中文版`](https://zh-google-styleguide.readthedocs.io/en/latest/)  
+* [Google C++ Style Guide `guidelines`](https://google.github.io/styleguide/cppguide.html) [`中文版`](https://zh-google-styleguide.readthedocs.io/en/latest/)  
 * [How To Use gflags](https://gflags.github.io/gflags/)   
 * [C++ Tips of the Week](https://abseil.io/tips/)  
 * [cpp-project-template](https://code.google.com/archive/p/cpp-project-template/downloads)  
 
 ### Links
 
-
 * [LearnCpp.com](https://www.learncpp.com)   
 * [C++ FAQ](https://isocpp.org/wiki/faq)  
+
+### Design Patterns
+* [Design Patterns for Humans `quick lookup`](https://github.com/kamranahmedse/design-patterns-for-humans)   
+* [(Refactoring Guru) Design Patterns `good reference`](https://refactoring.guru/design-patterns/catalog)[`中文版`](https://refactoringguru.cn/design-patterns/catalog)  
+* [(Source Making) Design Patterns `good tips`](https://sourcemaking.com/design_patterns)    
 
 
 ## C++ is a compiled language
@@ -42,7 +46,7 @@
 ## Self-contained Headers
 * In general, every `.cc` file should have an associated `.h` file
 * The `.h` files contain the declarations, while the `.cc` files contain the definitions 
-* Place the declarations/definitions for `template` and `inline functions` in the same file
+* Place the declarations/definitions for `template` and `inline functions` in the header files
 
 * All header files should be self-contained (compile on their own)  
 * All header files should have `#define guards` to prevent multiple inclusion  
@@ -67,9 +71,9 @@
 
 ## Keyword `virtual`
 
-* `virtual` member function is to support polymorphism;  
+* `virtual` member function is to support polymorphism;   
   - A `class` stores virtual functions in a virtual function table (`vtbl`), if any   
-  - The derived class cannot override non-virtual functions   
+  - The derived class should not redefine inherited non-virtual functions       
   - The derived class can inherit, override, or introduce virtual functions    
   - The derived class must implement the pure virtual functions   
   - Explicitly annotate overrides with `override` or `final` (to catch bugs)     
@@ -123,3 +127,6 @@ You have to read it backward, like the compiler does. For instance :
 
 ## World map of STL algorithms
 [<img target="_blank" src="images/world_map_of_cpp_STL_algorithms.png">](https://www.fluentcpp.com/getthemap/)
+
+## Design Patterns
+[<img target="_blank" src="images/design_patterns.png">](https://refactoring.guru/design-patterns/catalog)
