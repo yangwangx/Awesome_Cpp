@@ -20,6 +20,7 @@
 
 * [LearnCpp.com](https://www.learncpp.com)   
 * [C++ FAQ](https://isocpp.org/wiki/faq)  
+* [Explore C++ on kandi](https://kandi.openweaver.com/explore/c++)  
 
 ### Design Patterns
 * [Design Patterns for Humans `quick lookup`](https://github.com/kamranahmedse/design-patterns-for-humans)   
